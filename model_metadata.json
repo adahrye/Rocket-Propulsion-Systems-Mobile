@@ -1,0 +1,102 @@
+{
+  "target": "physics_violation_flag",
+  "categorical_features": [
+    "fuel_type",
+    "oxidizer_type"
+  ],
+  "numeric_features": [
+    "chamber_pressure_bar",
+    "oxidizer_fuel_ratio",
+    "combustion_temperature_K",
+    "heat_capacity_ratio",
+    "nozzle_expansion_ratio",
+    "ambient_pressure_bar",
+    "specific_impulse_s",
+    "combustion_stability_margin"
+  ],
+  "fuel_types": [
+    "APCP",
+    "Aerozine50",
+    "Aniline",
+    "CH4",
+    "DB_Solid",
+    "Ethane",
+    "Ethanol",
+    "H2O2_98",
+    "HTPB_Hybrid",
+    "Hydrazine",
+    "Hydrazine_M",
+    "JP10",
+    "LH2",
+    "LMP103S",
+    "MMH",
+    "Methanol",
+    "NH3",
+    "PBAN",
+    "Paraffin",
+    "RP1",
+    "Syntin",
+    "Tonka250",
+    "UDMH",
+    "UH25"
+  ],
+  "oxidizer_types": [
+    "Catalyst",
+    "Internal_AP",
+    "LOX",
+    "NTO"
+  ],
+  "numeric_ranges": {
+    "chamber_pressure_bar": {
+      "min": 20.0,
+      "max": 250.0,
+      "median": 135.34
+    },
+    "oxidizer_fuel_ratio": {
+      "min": 0.6,
+      "max": 8.25,
+      "median": 1.736
+    },
+    "combustion_temperature_K": {
+      "min": 1081.2,
+      "max": 3718.9,
+      "median": 3243.5
+    },
+    "heat_capacity_ratio": {
+      "min": 1.161,
+      "max": 1.32,
+      "median": 1.24
+    },
+    "nozzle_expansion_ratio": {
+      "min": 5.0,
+      "max": 150.0,
+      "median": 77.55
+    },
+    "ambient_pressure_bar": {
+      "min": 0.01,
+      "max": 1.01325,
+      "median": 0.01
+    },
+    "specific_impulse_s": {
+      "min": 166.65,
+      "max": 474.25,
+      "median": 321.87
+    },
+    "combustion_stability_margin": {
+      "min": -2.129,
+      "max": 0.603,
+      "median": -0.062
+    }
+  },
+  "metrics": {
+    "accuracy": 0.8968,
+    "recall": 0.999302649930265,
+    "precision": 0.7356262833675564,
+    "f1": 0.8474275576581904,
+    "roc_auc": 0.9793959063243355,
+    "training_rows": 20000,
+    "test_rows": 5000
+  },
+  "model_name": "Tuned XGBoost",
+  "decision_threshold": 0.5
+}
